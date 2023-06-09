@@ -6,3 +6,7 @@
 ### **Step 4**: Second half of the terminal the current directory is backend folder : npm install 
 ### **Step 5**: In first terminal current directory is in frontend ,type command : npm start 
 ### **Step 6**: In second terminal current directory is backend, we took http backend as app.js ,type command: nodemon app.js 
+
+### data base default  admin 
+### username:sandeep
+### password:sandeep
