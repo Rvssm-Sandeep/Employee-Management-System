@@ -8,7 +8,7 @@ app.listen(5000, () => {
 });
 // connecting backend and frontend by server
 const path = require("path");
-app.use(exp.static(path.join(__dirname,"../client/build")));
+app.use(exp.static(path.join(__dirname,"../frontend/build")));
 
 require("dotenv/config");
 

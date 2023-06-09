@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('D:\sample\empman2\client\src\images\dashboard.jpg');
+  background-image: url(../../images/dashboard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

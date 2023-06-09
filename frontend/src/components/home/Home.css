@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('D:\sample\empman2\client\src\images\home.jpg');
+  background-image: url(../../images/home.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
