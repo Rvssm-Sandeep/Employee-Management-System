@@ -1,0 +1,125 @@
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../../images/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.login-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border:1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.login-content:hover {
+  transform: scale(1.02);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.login-form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  color: #fff;
+}
+
+.login-form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-control:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-text-danger {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.login-btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.login-password-input-wrapper {
+  position: relative;
+}
+
+.login-password-eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-fa-eye,
+.login-fa-eye-slash {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.login-fa-eye:hover,
+.login-fa-eye-slash:hover {
+  color: #007bff;
+}
+
+.login-username-icon::before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
