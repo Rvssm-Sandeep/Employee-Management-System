@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .home{
+      background-image: url(../../images/home.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    
+      
+    }
+    .login{
+        background-image: url(../../images/login.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+    }
+    
+    .users{
+      background-image: url(../../images/employees.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
+    
+    .add-user{
+      background-image: url(../../images/employees.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
+    .emp-dashboard{
+        background-image: url(../../images/dashboard.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height:100%;
+      }    
+
+.main{
+    min-height: calc(100vh - 81px)
+}
+     
+      
+
+      

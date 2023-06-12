@@ -6,7 +6,7 @@ const EmpDashboard = () => {
   return (
     <div className="emp-dashboard-container">
       <div className="d-flex justify-content-center align-items-center h-100">
-        <Card className="emp-dashboard">
+        <Card className="emp-dashboard text-dark">
           <Card.Body>
             <Card.Title className="emp-dashboard__title">Welcome to the Employee Dashboard</Card.Title>
             <Card.Text className="emp-dashboard__description">

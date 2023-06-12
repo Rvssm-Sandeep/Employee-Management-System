@@ -32,7 +32,7 @@ const AddEmployeePage = () => {
   };
 
   return (
-    <div className="cad my-5">
+    <div className="cad">
       <div className="card-body">
         <h3 className="display-7 text-center">Add New Employee</h3>
         {error && <p className="text-danger display-1 text-center">{error}</p>}

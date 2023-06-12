@@ -1,20 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../../images/employees.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
 .cad {
+  margin-top: 50px;
+  margin-bottom: 50px;
   
   color:white;
   padding: 4rem 2rem;
   width: 350px;
   display: block;
-  margin:auto;
+  margin:auto ;
   max-width: 400px;
   border-radius: 1rem;
   border: 1px solid transparent;

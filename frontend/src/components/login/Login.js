@@ -30,7 +30,7 @@ function Login() {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container ">
       <div className="background-image"></div>
       <div className="login-content">
         {error?.length !== 0 && <p className="text-danger display-1">{error}</p>}

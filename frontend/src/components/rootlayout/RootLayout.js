@@ -1,18 +1,33 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import NavbarMain from "../navbar/NavbarMain"
 import Footer from "../footer/Footer"
-import { Outlet } from 'react-router-dom'
+import { Outlet,useLocation } from 'react-router-dom'
+import "./RootLayout.css"
 function RootLayout() {
+  let location=useLocation();
+   let [path,setPath]=useState("none");
+   useEffect(()=>{
+    let url=location.pathname.replace("/","")
+    if(url.length===0){
+    setPath("home")
+   }
+   else{
+    setPath(url)
+   }
+},[location])
   return (
-    <div style={{minHeight:"100vh",display:"flex",flexDirection:"column"}}>
-     <NavbarMain/>
+    <div  className={path}>
+      <div className='head'>
+      <NavbarMain/>
+      </div>
+     
      {/* placeholder */}
-     <div >
+     <div className='main' >
      <Outlet/>
      </div>
-     <div style={{marginTop:"auto"}}>
+    {/* <div className='down'>
      <Footer/>
-     </div>
+     </div> */}
      
     </div>
   )

@@ -29,10 +29,10 @@ function NavbarMain() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav list-unstyled">
               {!userLoginStatus && (
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className=" a mx-2 p-2   fs-5" to="/">
                     Home
                   </Link>
                 </li>
@@ -40,7 +40,7 @@ function NavbarMain() {
 
               {userLoginStatus && (
                 <li className="nav-item">
-                  <Link className="nav-link" to="/emp-dashboard">
+                  <Link className="a mx-2 p-2    fs-5" to="/emp-dashboard">
                     Dashboard
                   </Link>
                 </li>
@@ -48,7 +48,7 @@ function NavbarMain() {
 
               {!userLoginStatus ? (
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">
+                  <Link className="a mx-2 p-2     fs-5" to="/login">
                     Login
                   </Link>
                 </li>
@@ -57,13 +57,13 @@ function NavbarMain() {
                   {role === "admin" && (
                     <>
                       <li className="nav-item">
-                        <Link className="nav-link" to="/users">
+                        <Link className="a mx-2 p-2     fs-5" to="/users">
                           Employees
                         </Link>
                       </li>
-                      <li className="nav-item dropdown">
+                      <li className="nav-item ">
                     <Link
-                      className="nav-link "
+                      className="a mx-2 p-2     fs-5 "
                       to="/add-user"
                     >
                       Add Employees
@@ -72,7 +72,7 @@ function NavbarMain() {
                     </>
                   )}
                   <li className="nav-item">
-                    <Link className="nav-link" to="/login" onClick={logoutUser}>
+                    <Link className="a mx-2 p-2     fs-5" to="/login" onClick={logoutUser}>
                       Logout
                     </Link>
                   </li>

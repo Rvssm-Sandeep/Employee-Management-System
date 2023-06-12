@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer-container">
-      <div className="footer-content">
+      <div className="footer-content text-dark">
         <p>&copy; {new Date().getFullYear()} Employee Management System. All rights reserved.</p>
       </div>
     </footer>

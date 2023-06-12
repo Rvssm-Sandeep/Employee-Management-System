@@ -5,22 +5,11 @@
   font-family: sans-serif;
 }
 
-.users {
-  height: 100vh;
-  background: url(../../images/employees.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 main.table {
-  width: 82vw;
-  height: 90vh;
+  width: 80vw;
+  
   background-color: #f3f3f3;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
