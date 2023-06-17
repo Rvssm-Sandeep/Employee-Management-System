@@ -1,22 +1,17 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import './EmpDashboard.css';
-
+import React from 'react'
+import Graphs from '../graphs/Graphs'
+import TaskList from '../taskslist/TaskList'
 const EmpDashboard = () => {
   return (
-    <div className="emp-dashboard-container">
-      <div className="d-flex justify-content-center align-items-center h-100">
-        <Card className="emp-dashboard text-dark">
-          <Card.Body>
-            <Card.Title className="emp-dashboard__title">Welcome to the Employee Dashboard</Card.Title>
-            <Card.Text className="emp-dashboard__description">
-              Here, you can view and manage your tasks, schedule, and other relevant information.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+    <div>
+      <div>
+      <Graphs/>
       </div>
+    <div>
+      <TaskList/>
     </div>
-  );
-};
+    </div>
+  )
+}
 
 export default EmpDashboard;

@@ -1,0 +1,83 @@
+.modal-profile {
+  background-color: #52ACFF;
+  background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+
+}
+
+.modal {
+  background: hsla(0, 0%, 40%, .6);
+  box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(236, 50%, 50%, 0.3);
+}
+
+.btn-hover.color-6 {
+  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover {
+  width: 200px;
+ 
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+ 
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+.edit-card {
+  padding: 4rem;
+  border-radius: 1rem;
+  border: 1px solid #4CAF50;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0.5rem 1.5rem rgba(76, 175, 80, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.edit-card:hover {
+  transform: scale(1.05);
+}
+
+.inputbox4 textarea,
+.inputbox4 select,
+.inputbox4 input {
+  width: 80%;
+  margin-bottom: 3.5rem;
+}
+
+.inputbox4 i {
+  position: absolute;
+  right: 6%;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+
+
+@media (max-width: 500px) {
+  .card {
+    width: auto;
+  }
+}

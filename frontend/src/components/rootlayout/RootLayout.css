@@ -39,13 +39,37 @@
       height: 100%;
     }
     .emp-dashboard{
-        background-image: url(../../images/dashboard.jpg);
+        background-image: url(../../images/empdashboard.jpg);
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         height:100%;
       }    
+    .add-task{
+      background-image: url(../../images/addtask.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height:100%;
+    }
+    .emp-graphs{
+      background-image: url(../../images/addtask.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
+    .emp-profile{
+      background-image: url(../../images/profile.jpg);
+      background-position:center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100%;
+    }
 
 .main{
     min-height: calc(100vh - 81px)

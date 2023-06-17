@@ -30,33 +30,27 @@ function NavbarMain() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <ul className="navbar-nav list-unstyled">
-              {!userLoginStatus && (
-                <li className="nav-item">
+           
+                {!userLoginStatus &&
+                  <ul className="navbar-nav list-unstyled">
+                    <li className="nav-item">
                   <Link className=" a mx-2 p-2   fs-5" to="/">
                     Home
                   </Link>
                 </li>
-              )}
+                     <li className="nav-item">
+                 <Link className="a mx-2 p-2     fs-5" to="/login">
+                   Login
+                 </Link>
+               </li>
 
-              {userLoginStatus && (
-                <li className="nav-item">
-                  <Link className="a mx-2 p-2    fs-5" to="/emp-dashboard">
-                    Dashboard
-                  </Link>
-                </li>
-              )}
+                  </ul>
+                
+          }
 
-              {!userLoginStatus ? (
-                <li className="nav-item">
-                  <Link className="a mx-2 p-2     fs-5" to="/login">
-                    Login
-                  </Link>
-                </li>
-              ) : (
-                <>
-                  {role === "admin" && (
-                    <>
-                      <li className="nav-item">
+{userLoginStatus && role == "admin" ? (
+                <ul className="navbar-nav list-unstyled">
+                  <li className="nav-item">
                         <Link className="a mx-2 p-2     fs-5" to="/users">
                           Employees
                         </Link>
@@ -69,15 +63,42 @@ function NavbarMain() {
                       Add Employees
                     </Link>
                   </li>
-                    </>
+                    </ul>
+               
+              ) : (
+                userLoginStatus && (
+                  <ul className="navbar-nav list-unstyled">
+                    <li className="nav-item">
+                  <Link className="a mx-2 p-2    fs-5" to="/emp-dashboard">
+                    Dashboard
+                  </Link>
+                </li>
+                <li className="nav-item ">
+                      <Link
+                        className="a mx-2 p-2    fs-5"
+                        
+                        to="/add-task"
+                      >
+                        Add Task
+                      </Link>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <Link
+                        className="a mx-2 p-2 fs-5"
+                        to="/emp-profile"
+                      >
+                        Profile
+                      </Link>
+                    </li>
+                  </ul> )
                   )}
-                  <li className="nav-item">
-                    <Link className="a mx-2 p-2     fs-5" to="/login" onClick={logoutUser}>
-                      Logout
-                    </Link>
-                  </li>
-                </>
-              )}
+                {userLoginStatus&&
+                <li className="nav-item">
+                <Link className="a mx-2 p-2     fs-5" to="/login" onClick={logoutUser}>
+                  Logout
+                </Link>
+              </li>
+              }
             </ul>
           </Nav>
         </Navbar.Collapse>

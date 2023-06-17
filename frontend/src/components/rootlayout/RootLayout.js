@@ -16,7 +16,7 @@ function RootLayout() {
    }
 },[location])
   return (
-    <div  className={path}>
+    <div className={path}>
       <div className='head'>
       <NavbarMain/>
       </div>
@@ -28,9 +28,8 @@ function RootLayout() {
     {/* <div className='down'>
      <Footer/>
      </div> */}
-     
     </div>
   )
 }
 
-export default RootLayout
+export default RootLayout;

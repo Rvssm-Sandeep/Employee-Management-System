@@ -6,35 +6,42 @@ import { useNavigate } from 'react-router-dom';
 
 const AddEmployeePage = () => {
   const [error, setError] = useState('');
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (newUser) => {
     newUser = { ...newUser, role: "employee" };
 
-    axios.post("http://localhost:5000/user-api/add-user", newUser)
-      .then(response => {
-        if (response.status === 201) {
-          navigate("/users");
-        } else {
-          setError(response.data.message);
-        }
-      })
-      .catch(error => {
-        if (error.response) {
-          setError(error.response.data.message);
-        } else if (error.request) {
-          setError(error.message);
-        } else {
-          setError(error.message);
-        }
-      });
+    let formSubmit = (newUser) => {
+      newUser = { ...newUser, role: "employee", tasks: [] };
+
+      axios.post("http://localhost:5000/user-api/add-user", newUser)
+        .then(response => {
+          if (response.status === 201) {
+            navigate("/users");
+          } else {
+            setError(response.data.message);
+          }
+        })
+        .catch(error => {
+          if (error.response) {
+            setError(error.response.data.message);
+          } else if (error.request) {
+            setError(error.message);
+          } else {
+            setError(error.message);
+          }
+        });
+      reset();
+    };
+    
+    formSubmit(newUser);
   };
 
   return (
     <div className="cad">
-      <div className="card-body">
-        <h3 className="display-7 text-center">Add New Employee</h3>
+      <div className="card-body cb-user">
+        <h4 className='fs-1'>Add New Employee</h4>
         {error && <p className="text-danger display-1 text-center">{error}</p>}
         <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column align-items-center">
           <div className="form-box">
