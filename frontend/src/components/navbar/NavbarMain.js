@@ -60,7 +60,7 @@ function NavbarMain() {
                       className="a mx-2 p-2     fs-5 "
                       to="/add-user"
                     >
-                      Add Employees
+                      Add Employee
                     </Link>
                   </li>
                     </ul>

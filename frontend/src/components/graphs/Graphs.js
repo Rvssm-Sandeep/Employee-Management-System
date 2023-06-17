@@ -156,7 +156,7 @@ const getTaskCountsByWeek = () => {
                           
                           noData: { text: "Empty Data" },
                           labels: ["Working", "Break", "Meeting"],
-                          colors: ["#EC6B56", "#FFC154", "#47B39C"],
+                          colors: ["#47B39C", "#EC6B56", "#FFC154"],
                           legend:{
                             position:"bottom"
                           }
@@ -222,7 +222,7 @@ const getTaskCountsByWeek = () => {
                           },
                           noData: { text: "Empty Data" },
                           labels: ["Working", "Break", "Meeting"],
-                          colors: ["#FF6384", "#36A2EB", "#FFCE56"],
+                          colors: ["#47B39C", "#EC6B56", "#FFC154"],
                         }}
                       />
                     </div>

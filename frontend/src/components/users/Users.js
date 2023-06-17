@@ -87,7 +87,7 @@ const Users = () => {
                 <th>Contact Number</th>
                 <th>Department</th>
                 <th>Joining date</th>
-                <th colSpan="2">Actions</th>
+                <th>Actions</th>
               </tr>
             </thead>
             <tbody>
