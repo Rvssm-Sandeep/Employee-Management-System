@@ -10,18 +10,18 @@ services:
     networks:
       - my-network
     depends_on:
-      - server
+      - backend
 
-  server:
+  backend:
     build:
-      context: ./server
+      context: ./backend
       dockerfile: Dockerfile
     env_file:
-      - ./server/.env
+      - ./backend/.env
     ports:
       - 5000:5000
     volumes:
-      - ./server/data:/app/data
+      - ./backend/data:/app/data
     networks:
       - my-network
 
