@@ -3,19 +3,19 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import './AddUser.css';
 import { useNavigate } from 'react-router-dom';
-
+import { domainContext } from "../../context/DomainContextProvider";
 const AddEmployeePage = () => {
   const [error, setError] = useState('');
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const navigate = useNavigate();
-
+  let [domain,setDomain]=useContext(domainContext)
   const onSubmit = (newUser) => {
     newUser = { ...newUser, role: "employee" };
 
     let formSubmit = (newUser) => {
       newUser = { ...newUser, role: "employee", tasks: [] };
 
-      axios.post("http://localhost:5000/user-api/add-user", newUser)
+      axios.post(`${domain}/user-api/add-user`, newUser)
         .then(response => {
           if (response.status === 201) {
             navigate("/users");
